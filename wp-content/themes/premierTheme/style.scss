@@ -1,0 +1,178 @@
+/*
+Theme Name: Baba
+Author: Lafalize Bastien
+Description: Mon premier thème !
+Requires at least: WordPress 5.6
+Version: 1.0
+*/
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #232634;
+  }
+  .site__header__menu {
+      display: flex;
+  }
+  #menu-menu-principal li {
+      margin: 0 1rem;
+      list-style-type: none;
+      margin: 0 1rem;
+      & a {
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+        &:hover {
+            text-decoration: underline dotted white;
+        }
+      }
+  }
+  #menu-bas-de-page li {
+    margin: 0 1rem;
+    list-style-type: none;
+    margin: 0 1rem;
+    & a {
+      text-decoration: none;
+      color: rgb(235, 4, 4);
+      transition: 0.5s;
+      &:hover {
+        text-decoration: underline dotted white;
+      }
+    }
+}
+  .img__Header {
+      height: 15rem;
+      object-fit: contain;
+  }
+  .formSearch {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      height: 1.3rem;
+  }
+  .logoSearch {
+      height: 100%;
+      filter: invert(100%);
+  }
+  .inputSearch {
+      margin: 0 1rem;
+  }
+  .textSearch {
+      color: white;
+  }
+  h1 {
+      margin: 1rem 0;
+  }
+  .blogSection {
+      margin: 0 5rem;
+      background-color: rgb(224, 224, 224);
+      border-radius: 0.5rem;
+  }
+  .site__sidebar {
+     // background-color: tomato;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .site__blog {
+      display: flex;
+  }
+  .title_Home {
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-size: 2rem; 
+  }
+  .post {
+      margin: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+  }
+  .post > h2 {
+      color: rgb(82, 82, 82);
+      font-size: 1.7rem;
+      font-weight: 300;
+  }
+  .post__meta {
+      font-size: smaller;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+  }
+  .post p {
+      text-align: justify;
+  }
+  .post > img {
+      border-radius: 1rem;
+  }
+  .site__navigation {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 15rem;
+  }
+  .gallery-icon img {
+      height: 33%!important;
+  }
+  article {
+      background-color: rgba(76, 82, 104, 0.219);
+      border-radius: 0.5rem;
+      padding: 1rem 1rem;
+  }
+  article > img {
+    height:auto!important;
+    width: 70%!important;
+    align-self: center;
+}
+.comment-form-comment {
+    display: flex;
+    flex-direction: column;
+}
+.comment-respond {
+    margin: 2rem 0 0 0;
+}
+.comment-author > img {
+    border-radius: 50%;
+}
+.post__meta > img {
+    border-radius: 50%;
+}
+.logged-in-as {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acf-gallery {
+    list-style-type: none; /* Retirer le style de liste */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Autoriser le retour à la ligne */
+  }
+  
+  .acf-gallery li {
+    //flex: 33.333%; /* 3 images par ligne maximum, mettez 25% pour en avoir 4 */
+    padding: 10px;
+  }
+  .acf-gallery li img {
+    border-radius: 1rem;
+  }
+  .lightbox {
+    display: none; /* cachée par défaut */
+    position: fixed; /* fixée et qui prend tout l'écran */
+    z-index: 1000; /* Pour être sûr de passer au dessus du reste */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7); /* noire avec transparence */
+    background-size: contain; /* l'image occupera le maximum d'espace disponible */
+    background-repeat: no-repeat; 
+    background-position: center;
+    cursor: pointer; /* Le curseur aura la même forme que sur un lien */
+  }
