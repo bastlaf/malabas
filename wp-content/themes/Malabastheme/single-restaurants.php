@@ -46,7 +46,7 @@
                                     <p class="presentation__board__center__text"><?php the_sub_field("text_choice"); ?></p>
                                 </div>
                                 <div class="presentation__board__center__right">
-                                    <img class="presentation__board__center__image" src="<?php echo get_sub_field("picture_choice")["url"]; ?>" alt="">
+                                    <img class="presentation__board__center__image " src="<?php echo get_sub_field("picture_choice")["url"]; ?>" alt="">
                                 </div>
                             </div>
                         </div>

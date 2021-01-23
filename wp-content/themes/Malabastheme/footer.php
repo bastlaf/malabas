@@ -4,14 +4,15 @@
     <!-- <img class="footer__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/hachures-noires.png"/> -->
             <div class="footer__intro">
                     <p class="footer__intro__logo">DEV RESTAURANT</p>
-                        
-                    <div class="footer__intro__pub"> <?php the_field('introduction', "option")? the_field('introduction'): "no field"; ?></div>  
-                    <div class="footer__intro__media">
-                        <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/linkedin.svg" alt="logo linkedin"></div>
-                        <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/facebook.svg" alt="logo facebook"></div>
-                        <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/instagram.svg" alt="logo instagram"></div>
-                        <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/twitter.svg" alt="logo twitter"></div>
-                    </div>
+                    <div class="footer__intro__content">
+                        <div class="footer__intro__pub"> <?php the_field('introduction', "option")? the_field('introduction'): "no field"; ?></div>  
+                        <div class="footer__intro__media">
+                            <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/linkedin.svg" alt="logo linkedin"></div>
+                            <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/facebook.svg" alt="logo facebook"></div>
+                            <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/instagram.svg" alt="logo instagram"></div>
+                            <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/twitter.svg" alt="logo twitter"></div>
+                        </div>
+</div>
             </div>
             
             <div class="footer__open__hours">
@@ -40,9 +41,14 @@
                             <p><?php the_field("country","option"); ?></p>
                         </div>
                 </div>
+                <div class="footer__contact__email">
+                    <img class="footer__contact__email__icone" src="<?= get_template_directory_uri();?>/assets/svg/mail-1.svg" alt="address email">
+                    <p><?php the_field("mail", "option"); ?></p>
+                </div>
             </div>
             
             <div class="footer__instagram">
+            <p class="footer__instagram__title">Instagram</p>
             <?php echo do_shortcode('[iscwp-grid username="best.burgers.insta" grid="3" limit="6"]'); ?>
            
                     

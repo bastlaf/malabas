@@ -89,10 +89,11 @@ body
         margin: auto;
         height: 30rem;
         background-color: $black;
+        box-shadow: 0px 5px 5px black;
        @include medium
        {
            height: 20rem;
-           box-shadow: 0px 5px 5px black;
+           
        }
         @include extralarge
         {
@@ -214,52 +215,98 @@ body
     width: 100%;
     position: relative;
     padding-top: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-color:$black;
     color: white;
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-around;
+    
+    @include extralarge{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-around;
+    }
     p, b{
         color: white;
         font-size: 1.6rem;
     }
     .footer__intro
     {
-        
+       
         margin-right: 5rem;
+        @include medium{
+            width: 100%;
+        }
         &__logo
         {
-            font-size: 1.4rem;
+            font-size: 4rem;
             font-weight: bold;
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
         }
         &__pub
         {
-            width: 15rem;
+            width: 100%;
+            line-height: 3rem;
             color: white;
+            @include extralarge
+            {  
+                 width: 15rem; 
+            }
         }
+        
         &__media
         {
+            width: 100%;
             display: flex;
             flex-wrap: wrap; 
+            margin-left: 40%;
+            
             img{
                 margin-right: 2rem;
+            }
+            @include medium
+            {
+                margin-top: 7rem;
+                flex-direction: row;
+            }
+        }
+        &__content
+        {
+            @include medium
+            {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
             }
         }
      
     }
+    .footer__open__hours
+    {
+        margin-left: 0rem!important;
+        padding-left:0rem;
+        @include medium
+        {
+            width: 46%;
+        }
+    }
     .footer__open__hours__repeater
     {
-        margin-bottom: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         font-weight: bold;
-
+        width: 100%;
+        @include extralarge
+        {
+            margin-bottom: 1rem;
+        }
+        
     }
     .footer__open__hours__repeater__line
     {
         border-bottom: 1px solid $white;
-        width: 40%!important;
+        width: 35%!important;
         
     }
     .footer__open__hours__flex
@@ -268,7 +315,13 @@ body
         flex-direction: row;
         flex: 33%;
         width: 35rem;
-        margin: 1rem;
+        @include extralarge{
+            margin: 1rem;
+        }
+        img 
+        {
+            margin-right: 1rem;
+        }
     }
     .footer__open__hours__flex p 
     {
@@ -277,14 +330,28 @@ body
     };
     .footer__contact
     {
-        margin-left: 4rem;
-        
+        margin-top:3rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        @include medium
+        {
+            width: 46%;
+            margin-left: 4rem;
+        }
+        @include extralarge
+        {margin-left: 4rem;
+        margin-right:4rem;
+        }
+        &__title
+        {
+            font-weight: bold;
+        }
     }
     .footer__contact__phone
     {
         margin-top: 1rem;
     }
-    .footer__contact__adress, .footer__contact__phone
+    .footer__contact__adress, .footer__contact__phone,  .footer__contact__email
     {
         display: flex;
         flex-direction:row;
@@ -294,14 +361,34 @@ body
             margin-right: 2rem;
         };
     }
-    .footer__contact__adress__restaurant
+    .footer__contact__adress__restaurant,  .footer__contact__email
     {
         margin-top: 1rem;
     }
+   
 } 
+.footer__instagram
+{
+    @include medium
+    {
+        display: block;
+        margin: auto;
+    }
+    
+    &__title
+    {
+        @include medium
+        {
+            margin-top: 3rem;
+            text-align: center;
+        }
+    }
+}
 .iscwp-img
 {   height: 100%;
     width: auto!important;
+    display: block;
+  
     &-link
     {
         margin:0rem!important;
@@ -310,6 +397,7 @@ body
     &-wrp
     {   height:10rem!important;
         margin:0rem!important;}
+    
 }
 
 .iscwp-meta
