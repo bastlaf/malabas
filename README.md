@@ -2,7 +2,7 @@
 
 ###### A simple Wordpress project 
 
-###Live Demo
+### Live Demo
 http://http//malabas.byethost7.com
 http://malabas.byethost7.com/?i=1 
 
@@ -12,7 +12,7 @@ mdp: TucTAa5NYC5dsh
 login: Chef
 mdp: 123456
 
-###Features
+### Features
 
 #### Generals
 
