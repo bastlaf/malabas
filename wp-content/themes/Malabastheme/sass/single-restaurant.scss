@@ -21,21 +21,29 @@ body
 }
 .banneer
 {
+   
     height:87vh;
+    
 }
 .banneer_image
 {
-    height:87vh;
+    height: 87vh;
     h2, h1, p
     {
         color: $white;
-        text-align:center;
+        text-align:left;
         position:relative;
         z-index: 2;
+        @include extralarge
+        {
+         text-align:center;
+        }
     }
     h2
     {
-       padding-top: 10vh;
+       padding-top: 0vh;
+       @include extralarge
+       {padding-top: 10vh;}
     }
   width: 100%;
   overflow: hidden;
@@ -54,6 +62,10 @@ body
     left: 0px;
     opacity: 0.2;
     z-index: -20;
+    }
+    @include extralarge
+    {
+        height:87vh;
     }
     
 }
@@ -97,8 +109,12 @@ body
     {
         display:block;
         margin: auto;
-        width: 70%;
+        width: 100%;
         margin-bottom: 5rem;
+        @include extralarge
+        {
+            width: 70%;
+        }
     }
 
 }
@@ -109,10 +125,15 @@ body
 {
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     justify-content: center;
-    border: 1px solid grey;
-    box-shadow: 5px 1px 0px grey;
     margin-top: 2rem;
+    @include extralarge
+    {
+    border: 1px solid grey;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    flex-wrap: nowrap;
+    }
     &__left, &__right
     {
         width: 100%;
@@ -121,7 +142,7 @@ body
     {
         width: 100%;
         height: 100%;
-       
+        object-fit: cover;
     }
     &__intro
     {
@@ -144,10 +165,12 @@ body
 }
 
 .map{
+    
     &__intro
     {
         margin-top: 2rem!important;
         text-align: center;
+        padding-top: 3rem;
         &__bold
         {
             font-weight: bolder;
@@ -157,11 +180,17 @@ body
 }
 .acf-map {
     width: 100%;
-    height: 84rem;
+    height:60rem;
     border: #ccc solid 1px;
-    margin: 2rem 0;
+   
+    @include extralarge
+    {
+      
+      height: 84rem;
+     
+    }
   }
-  
+ 
   .acf-map img {
      max-width: inherit !important; /* Corrige un souci de conflit avec le thème sinon le petit bonhomme de StreetView s’en retrouve tout déformé*/
   }
@@ -169,27 +198,42 @@ body
 .part_book
 {
     position: relative;
+    padding-top: 5rem;
+
 }
 
 .book
 {
     display: block;
     margin: auto;
+    
     &__intro
     {
+        padding-top: 3rem;
         text-align: center;
     }
 }
 .reserve
 {
     background-color:  #f2f3f4;
-    width: 50rem;
+    width: 100%;
     height: auto; 
-    position: absolute;
-    top:15rem;
-    right: 35rem;
+    position: relative;
     z-index: 10;
-    
+    @include medium
+    {
+        position: absolute;
+        width: 70%;
+        top: 75rem;
+        right: 15%;
+    }
+    @include extralarge
+    {
+        width: 50rem;
+        top:25rem;
+        right: 35rem;
+       position: absolute; 
+    }
     .widget::marker
     {
         color: #f2f3f4;
@@ -307,8 +351,22 @@ body
 }
 .image_register
 {
-    width: 70rem;
+    width:100%;
     height: auto;
     z-index: 9;
-    margin-left: 20vw;  
+    @include medium
+    {
+        padding-bottom: 35rem;
+    }
+    @include large
+    {
+        padding-bottom: 10rem;
+    }
+    @include extralarge
+    {
+        width: 80rem;
+        margin-left: 10vw; 
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    } 
 }
