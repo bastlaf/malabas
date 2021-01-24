@@ -30,10 +30,10 @@
             <div class="box__Ingredient">
 
                 <div class="boxImgSocialMedia">
-                    <a href="#"><img class="imgFace" src="/malabas/wp-content/themes/Malabastheme/assets/svg/facebook2.svg" alt="facebook"></a>
-                    <a href="#"><img class="imgFace" src="/malabas/wp-content/themes/Malabastheme/assets/svg/twitter2.svg" alt="twitter"></a>
-                    <a href="#"><img class="imgFace" src="/malabas/wp-content/themes/Malabastheme/assets/svg/instagram2.svg" alt="instagram"></a>
-                    <a href="#"><img class="imgFace" src="/malabas/wp-content/themes/Malabastheme/assets/svg/email.svg" alt="mail"></a>
+                    <a href="#"><img class="imgFace" src="<?= get_template_directory_uri(); ?>/assets/svg/facebook2.svg" alt="facebook"></a>
+                    <a href="#"><img class="imgFace" src="<?= get_template_directory_uri(); ?>/assets/svg/twitter2.svg" alt="twitter"></a>
+                    <a href="#"><img class="imgFace" src="<?= get_template_directory_uri(); ?>/assets/svg/instagram2.svg" alt="instagram"></a>
+                    <a href="#"><img class="imgFace" src="<?= get_template_directory_uri(); ?>/assets/svg/email.svg" alt="mail"></a>
                 </div>
 
                 <h2 class="title__Ingredients">Ingredients :</h2>
