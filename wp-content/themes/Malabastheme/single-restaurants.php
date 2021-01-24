@@ -6,7 +6,7 @@
             
         ?>
         <section class="banneer">
-        <div class="banneer_image" style="background-image: url('<?= $image_id['url']?>');">
+        <div class="banneer_image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('<?= $image_id['url']?>');">
         
             <div class="hero__wrapper">
                 <h2 class="hero__wrapper__subtitle"><?php the_field("subtitle_restaurant");?></h2>
@@ -46,7 +46,7 @@
                                     <p class="presentation__board__center__text"><?php the_sub_field("text_choice"); ?></p>
                                 </div>
                                 <div class="presentation__board__center__right">
-                                    <img class="presentation__board__center__image" src="<?php echo get_sub_field("picture_choice")["url"]; ?>" alt="">
+                                    <img class="presentation__board__center__image " src="<?php echo get_sub_field("picture_choice")["url"]; ?>" alt="">
                                 </div>
                             </div>
                         </div>
@@ -159,6 +159,12 @@
                     </form> -->
                 </div>            
             </div>
+        </div>
+        <div>
+            <?php get_template_part("parts/discover-menu"); ?>
+        </div>
+        <div>
+            <?php get_template_part("parts/latest-recipes"); ?>
         </div>
 
 

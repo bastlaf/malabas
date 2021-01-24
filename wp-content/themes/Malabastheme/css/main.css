@@ -189,17 +189,18 @@ body {
   margin: auto;
   height: 30rem;
   background-color: #1a1a1a;
+  box-shadow: 0px 5px 5px black;
 }
 @media screen and (min-width: 768px) {
   .newsletter__center {
     height: 20rem;
-    box-shadow: 0px 5px 5px black;
   }
 }
 @media screen and (min-width: 1200px) {
   .newsletter__center {
     width: 70%;
     height: 20rem;
+    top: 7rem;
   }
 }
 .newsletter__center__img {
@@ -227,7 +228,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -245,11 +246,12 @@ body {
   }
 }
 .newsletter__form p {
+  display: block;
+  margin: auto;
   text-align: center;
-  margin-left: 30%;
+  width: 15rem;
   font-size: 2.5rem;
   color: #efefef;
-  width: 15rem;
   font-family: "Poppins";
   font-weight: 700;
 }
@@ -282,13 +284,14 @@ body {
 }
 .newsletter__form__submit {
   width: 12rem;
+  padding-right: 0;
 }
 .newsletter__form__submit p {
   font-weight: bold;
 }
 .newsletter__form__mail {
   width: 90%;
-  margin-right: 0;
+  padding-right: 0;
 }
 @media screen and (min-width: 768px) {
   .newsletter__form__mail {
@@ -302,24 +305,28 @@ body {
 }
 
 .footer__img {
-  z-index: -2;
-  position: relative;
-  margin-top: -6rem;
-  width: 125rem;
-  display: block;
+  margin-bottom: -2rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .site__footer {
   width: 100%;
   position: relative;
   padding-top: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   background-color: #1a1a1a;
   color: white;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+}
+@media screen and (min-width: 1200px) {
+  .site__footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-around;
+  }
 }
 .site__footer p, .site__footer b {
   color: white;
@@ -328,62 +335,191 @@ body {
 .site__footer .footer__intro {
   margin-right: 5rem;
 }
+@media screen and (min-width: 768px) {
+  .site__footer .footer__intro {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro {
+    width: 20%;
+    margin-right: 0rem;
+  }
+}
 .site__footer .footer__intro__logo {
-  font-size: 1.4rem;
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro__logo {
+    font-size: 3.5rem;
+  }
 }
 .site__footer .footer__intro__pub {
-  width: 15rem;
+  width: 100%;
+  line-height: 3rem;
   color: white;
 }
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro__pub {
+    width: 20rem;
+  }
+}
 .site__footer .footer__intro__media {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 40%;
+  overflow: hidden;
 }
 .site__footer .footer__intro__media img {
   margin-right: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .site__footer .footer__intro__media {
+    margin-top: 7rem;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro__media {
+    margin-top: auto;
+    padding-left: 0rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site__footer .footer__intro__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro__content {
+    flex-direction: column;
+  }
+}
+.site__footer .footer__open__hours {
+  margin-left: 0rem !important;
+  padding-left: 0rem;
+}
+@media screen and (min-width: 768px) {
+  .site__footer .footer__open__hours {
+    width: 45%;
+    padding-top: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__open__hours {
+    padding-top: 2rem;
+    width: 25%;
+  }
+}
 .site__footer .footer__open__hours__repeater {
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   font-weight: bold;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__open__hours__repeater {
+    margin-bottom: 1rem;
+  }
 }
 .site__footer .footer__open__hours__repeater__line {
   border-bottom: 1px solid #eae5e5;
-  width: 40% !important;
+  width: 35% !important;
 }
 .site__footer .footer__open__hours__flex {
   display: flex;
   flex-direction: row;
   flex: 33%;
   width: 35rem;
-  margin: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__open__hours__flex {
+    margin: 1rem;
+  }
+}
+.site__footer .footer__open__hours__flex img {
+  margin-right: 1rem;
 }
 .site__footer .footer__open__hours__flex p {
   margin: 0;
   padding: 0;
 }
 .site__footer .footer__contact {
-  margin-left: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .site__footer .footer__contact {
+    width: 45%;
+    padding-top: 5rem;
+    padding-left: 10rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .site__footer .footer__contact {
+    padding-left: 20rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__contact {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    width: 20%;
+  }
+}
+.site__footer .footer__contact__title {
+  font-weight: bold;
 }
 .site__footer .footer__contact__phone {
   margin-top: 1rem;
 }
-.site__footer .footer__contact__adress, .site__footer .footer__contact__phone {
+.site__footer .footer__contact__adress, .site__footer .footer__contact__phone, .site__footer .footer__contact__email {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.site__footer .footer__contact__adress__icone, .site__footer .footer__contact__phone__icone {
-  margin-right: 2rem;
+.site__footer .footer__contact__adress__icone, .site__footer .footer__contact__phone__icone, .site__footer .footer__contact__email__icone {
+  padding-right: 2rem;
 }
-.site__footer .footer__contact__adress__restaurant {
+.site__footer .footer__contact__adress__restaurant, .site__footer .footer__contact__email {
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__instagram {
+    display: block;
+    margin: auto;
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__instagram {
+    width: 20%;
+    margin: 0rem;
+    padding-top: 2rem;
+  }
+}
+.footer__instagram__title {
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .footer__instagram__title {
+    margin-top: 3rem;
+    text-align: center;
+  }
 }
 
 .iscwp-img {
   height: 100%;
   width: auto !important;
+  display: block;
 }
 .iscwp-img-link {
   margin: 0rem !important;
