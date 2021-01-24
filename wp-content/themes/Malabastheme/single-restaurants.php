@@ -6,7 +6,7 @@
             
         ?>
         <section class="banneer">
-        <div class="banneer_image" style="background-image: url('<?= $image_id['url']?>');">
+        <div class="banneer_image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('<?= $image_id['url']?>');">
         
             <div class="hero__wrapper">
                 <h2 class="hero__wrapper__subtitle"><?php the_field("subtitle_restaurant");?></h2>
@@ -162,6 +162,9 @@
         </div>
         <div>
             <?php get_template_part("parts/discover-menu"); ?>
+        </div>
+        <div>
+            <?php get_template_part("parts/latest-recipes"); ?>
         </div>
 
 
