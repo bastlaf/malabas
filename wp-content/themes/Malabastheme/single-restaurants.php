@@ -160,6 +160,9 @@
                 </div>            
             </div>
         </div>
+        <div>
+            <?php get_template_part("parts/discover-menu"); ?>
+        </div>
 
 
     
