@@ -1,7 +1,6 @@
 <div class="newsletter"><?php get_template_part( 'parts/newsletter' ); ?></div>
-
+<img class="footer__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/hachures-noires.png"/>  
 <footer class="site__footer"> 
-    <!-- <img class="footer__img" src="<?php echo get_template_directory_uri(); ?>/assets/images/hachures-noires.png"/> -->
             <div class="footer__intro">
                     <p class="footer__intro__logo">DEV RESTAURANT</p>
                     <div class="footer__intro__content">
@@ -12,7 +11,7 @@
                             <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/instagram.svg" alt="logo instagram"></div>
                             <div><img src="<?= get_template_directory_uri(); ?>/assets/svg/twitter.svg" alt="logo twitter"></div>
                         </div>
-</div>
+                    </div>
             </div>
             
             <div class="footer__open__hours">

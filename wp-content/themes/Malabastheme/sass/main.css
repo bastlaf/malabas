@@ -152,6 +152,7 @@ body {
   .newsletter__center {
     width: 70%;
     height: 20rem;
+    top: 5rem;
   }
 }
 .newsletter__center__img {
@@ -185,9 +186,7 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin: 0rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -207,11 +206,12 @@ body {
   }
 }
 .newsletter__form p {
+  display: block;
+  margin: auto;
   text-align: center;
-  margin-left: 30%;
+  width: 15rem;
   font-size: 2.5rem;
   color: #efefef;
-  width: 15rem;
   font-family: "Poppins";
   font-weight: 700;
 }
@@ -244,13 +244,14 @@ body {
 }
 .newsletter__form__submit {
   width: 12rem;
+  padding-right: 0;
 }
 .newsletter__form__submit p {
   font-weight: bold;
 }
 .newsletter__form__mail {
   width: 90%;
-  margin-right: 0;
+  padding-right: 0;
 }
 @media screen and (min-width: 768px) {
   .newsletter__form__mail {
@@ -264,11 +265,9 @@ body {
 }
 
 .footer__img {
-  z-index: -2;
-  position: relative;
-  margin-top: -6rem;
-  width: 125rem;
-  display: block;
+  margin-bottom: -2rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .site__footer {
@@ -305,10 +304,21 @@ body {
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro {
+    width: 20%;
+    margin-right: 0rem;
+  }
+}
 .site__footer .footer__intro__logo {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro__logo {
+    font-size: 3.5rem;
+  }
 }
 .site__footer .footer__intro__pub {
   width: 100%;
@@ -317,7 +327,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .site__footer .footer__intro__pub {
-    width: 15rem;
+    width: 20rem;
   }
 }
 .site__footer .footer__intro__media {
@@ -327,7 +337,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 40%;
+  padding-left: 40%;
+  overflow: hidden;
 }
 .site__footer .footer__intro__media img {
   margin-right: 2rem;
@@ -339,6 +350,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro__media {
+    margin-top: auto;
+    padding-left: 0rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -353,13 +370,28 @@ body {
             flex-direction: row;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__intro__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .site__footer .footer__open__hours {
   margin-left: 0rem !important;
   padding-left: 0rem;
 }
 @media screen and (min-width: 768px) {
   .site__footer .footer__open__hours {
-    width: 46%;
+    width: 45%;
+    padding-top: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site__footer .footer__open__hours {
+    padding-top: 2rem;
+    width: 25%;
   }
 }
 .site__footer .footer__open__hours__repeater {
@@ -409,14 +441,22 @@ body {
 }
 @media screen and (min-width: 768px) {
   .site__footer .footer__contact {
-    width: 46%;
-    margin-left: 4rem;
+    width: 45%;
+    padding-top: 5rem;
+    padding-left: 10rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .site__footer .footer__contact {
+    padding-left: 20rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .site__footer .footer__contact {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    width: 20%;
   }
 }
 .site__footer .footer__contact__title {
@@ -437,7 +477,7 @@ body {
       flex-wrap: wrap;
 }
 .site__footer .footer__contact__adress__icone, .site__footer .footer__contact__phone__icone, .site__footer .footer__contact__email__icone {
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
 .site__footer .footer__contact__adress__restaurant, .site__footer .footer__contact__email {
   margin-top: 1rem;
@@ -447,7 +487,18 @@ body {
   .footer__instagram {
     display: block;
     margin: auto;
+    padding-bottom: 10rem;
   }
+}
+@media screen and (min-width: 1200px) {
+  .footer__instagram {
+    width: 20%;
+    margin: 0rem;
+    padding-top: 2rem;
+  }
+}
+.footer__instagram__title {
+  font-weight: bold;
 }
 @media screen and (min-width: 768px) {
   .footer__instagram__title {
