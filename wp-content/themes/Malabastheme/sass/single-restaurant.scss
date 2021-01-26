@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import 'reset';
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+//_____________________________________________variables________________________________
+$white :#eae5e5;
+$black : #1a1a1a;
+$grey : #F5F5F5;
+//_____________________________________________extends___________________________________
+
+//_____________________________________________menu______________________________________
+
+body
+{
+    font-family:"Poppins";
+
+}
+.banneer
+{
+   
+    height:87vh;
+    
+}
+.banneer_image
+{
+    height: 87vh;
+    h2, h1, p
+    {
+        color: $white;
+        text-align:left;
+        position:relative;
+        z-index: 2;
+        @include extralarge
+        {
+         text-align:center;
+        }
+    }
+    h2
+    {
+       padding-top: 0vh;
+       @include extralarge
+       {padding-top: 10vh;}
+    }
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  background-size: cover;
+  background-position: bottom center;
+  padding: 7rem 3.2rem 0 3.2rem;
+  
+  &::before{
+    content: "";
+    //filter: brightness(50%);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    z-index: -20;
+    }
+    @include extralarge
+    {
+        height:87vh;
+    }
+    
+}
+
+.hero__wrapper {
+   filter: initial;
+    @include extralarge {
+        grid-area: main;
+    }
+
+    &__title {
+        color: $white;
+        font-size: 4rem;
+    }
+
+    &__subtitle {
+        color: $white;
+    }
+    
+}
+
+
+.presentation{
+    background-color: #f2f3f4;
+    padding: 5rem 0;
+    &__intro
+    {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 3rem!important;
+            &__welcome
+            {
+                font-size: 1.8rem;
+            }
+            &__bold
+            {
+                font-weight: bolder;
+            }
+    }
+    &__board
+    {
+        display:block;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 5rem;
+        @include extralarge
+        {
+            width: 70%;
+        }
+    }
+
+}
+
+
+
+.presentation__board__center
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    @include extralarge
+    {
+    border: 1px solid grey;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    flex-wrap: nowrap;
+    }
+    &__left, &__right
+    {
+        width: 100%;
+    }
+    &__image
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__intro
+    {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 3rem!important;
+    }
+    &__text
+    {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        line-height: 4rem;
+        
+    }
+    &__title
+    {
+        text-align: center;
+        padding-top: 2rem;
+    }
+}
+
+.map{
+    
+    &__intro
+    {
+        margin-top: 2rem!important;
+        text-align: center;
+        padding-top: 3rem;
+        &__bold
+        {
+            font-weight: bolder;
+        }
+    }
+         
+}
+.acf-map {
+    width: 100%;
+    height:60rem;
+    border: #ccc solid 1px;
+   
+    @include extralarge
+    {
+      
+      height: 84rem;
+     
+    }
+  }
+ 
+  .acf-map img {
+     max-width: inherit !important; /* Corrige un souci de conflit avec le thème sinon le petit bonhomme de StreetView s’en retrouve tout déformé*/
+  }
+//______________________________________form___________________________
+.part_book
+{
+    position: relative;
+    padding-top: 5rem;
+
+}
+
+.book
+{
+    display: block;
+    margin: auto;
+    
+    &__intro
+    {
+        padding-top: 3rem;
+        text-align: center;
+    }
+}
+.reserve
+{
+    background-color:  #f2f3f4;
+    width: 100%;
+    height: auto; 
+    position: relative;
+    z-index: 10;
+    @include medium
+    {
+        position: absolute;
+        width: 70%;
+        top: 75rem;
+        right: 15%;
+    }
+    @include extralarge
+    {
+        width: 50rem;
+        top:25rem;
+        right: 35rem;
+       position: absolute; 
+    }
+    .widget::marker
+    {
+        color: #f2f3f4;
+    }
+    .widgettitle
+    {
+        display: none;
+    }
+    .reservation
+    {
+        border: none;
+        legend{
+            display: none;
+        }
+       
+        margin-left:20%;
+       #rtb-party
+       {
+        font-size: 1.6rem;
+       }
+    }
+    .rtb-contact
+    {
+        border:none;
+        legend{
+            display: none;
+        }
+        margin-left:20%;
+    }
+    a
+    {
+        color: $black;
+    }
+    button
+    {
+        margin-left:20%;
+        font-size: 1.6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 2rem;
+        border: 1px solid $black;
+        color:$white;
+        background-color: $black;
+    }
+//     form > .reserve__line__1, .reserve__line__2, .reserve__line__4
+//     {
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         input{
+//             width: 100%;
+//         }
+//     }
+//     .reserve__line__1>:nth-child(2), .reserve__line__2>:nth-child(2), .reserve__line__4 >:nth-child(2)
+//     {
+//         margin-left: 1rem;
+        
+//     }
+
+//     form{
+//         padding-top: 5rem;
+//         margin-left: 5rem;
+//         padding-bottom: 5rem;
+//         input, select
+//         {
+//             border: none;
+//             height: 4rem;
+//             margin-top:-0.5rem;
+//             font-family:"Poppins";
+//         }
+//         select{
+//             font-size: 1.6rem;
+//             margin-bottom: 1rem;
+//             height: 3rem;
+            
+//         }
+//         label
+//         {
+//             margin-right: 1rem;
+//             display: block;
+//             height: 4rem;
+//             margin-bottom:-1rem;
+//         }
+//         textarea
+//         {
+//             width: 80%;
+//             height: 5rem;
+//             border : none;
+//             font-size: 1.6rem;
+//             font-family: "Poppins";
+//         }
+//         .trip-start, time 
+//         {
+//             font-size: 1.6rem;
+//         }
+//         .submit
+//         {
+//             margin-top: 2rem;
+//             margin-left:-5rem;
+//             &__btn
+//             {
+//                 background-color:$black;
+//                 color:$white;
+//                 display:block;
+//                 margin: auto;
+//                 padding-left: 2rem;
+//                 padding-right: 2rem;
+//                 border-radius: 2rem;
+//             }
+//         }
+//     }
+    
+}
+.image_register
+{
+    width:100%;
+    height: auto;
+    z-index: 9;
+    @include medium
+    {
+        padding-bottom: 35rem;
+    }
+    @include large
+    {
+        padding-bottom: 10rem;
+    }
+    @include extralarge
+    {
+        width: 80rem;
+        margin-left: 10vw; 
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    } 
+}

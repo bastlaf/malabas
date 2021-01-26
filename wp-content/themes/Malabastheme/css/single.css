@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color: #292929;
+}
+
+p, a, input, ul, li, label {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 4.6rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+body {
+  line-height: 1;
+}
+
+.btn {
+  border: 0;
+  background-color: #292929;
+  color: #FFF;
+  padding: 15px 20px;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.clear {
+  clear: both;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.recipe_Principal {
+  width: 100vw;
+  max-width: 100%;
+  margin-top: -60px;
+}
+
+.recipe__SectionGray {
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.boxGrayMiddle {
+  width: 100vw;
+  align-self: center;
+  position: relative;
+  top: 10rem;
+}
+@media screen and (min-width: 768px) {
+  .boxGrayMiddle {
+    width: 60%;
+  }
+}
+
+.single__Title {
+  color: #FFF;
+  padding: 0 2rem;
+  font-weight: 500;
+}
+
+.single__Title--paragraphe p {
+  color: #FFF;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+}
+
+.attachment-recipe_img_principale {
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.menu__recipe {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.menu__recipe--left-btn {
+  width: 10rem;
+  border-right: 1px solid white;
+  margin-right: 3rem;
+  font-size: 1.6rem;
+  color: #FFF;
+}
+
+.menu__recipe--left {
+  display: flex;
+  align-items: top;
+}
+
+.menu__recipe--left-text {
+  padding: 0;
+  color: #FFF;
+}
+
+.recipe__SectionIngredient {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 13rem;
+}
+
+.box__IngredientEtInstructions {
+  width: 90%;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .box__IngredientEtInstructions {
+    width: 50%;
+  }
+}
+
+.ingredient__Text {
+  font-size: 4rem;
+  margin-left: 2rem;
+}
+
+.ingredient__Text li {
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+}
+
+.ingredient__Text ul li {
+  margin-bottom: 0;
+}
+
+.box__Ingredient {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.instructionEtImg {
+  display: flex;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.imgInstruction {
+  width: 100%;
+}
+
+.instructionNumber {
+  color: #FFF;
+  background-color: black;
+  border-radius: 50%;
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.instructionNumberP {
+  color: #FFF;
+  margin: 0;
+}
+
+.instru {
+  font-size: 1.6rem;
+}
+
+.instru * {
+  font-size: 1.6rem;
+}
+
+.box__Instructions {
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.imgInstruction {
+  width: 100%;
+  margin-top: 1rem;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+.title__Ingredients {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.title__Instructions {
+  font-weight: 500;
+}
+
+.nbrPersons {
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.boxImgSocialMedia {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: -6rem;
+}
+@media screen and (min-width: 768px) {
+  .boxImgSocialMedia {
+    flex-direction: column;
+    left: -6.5rem;
+    top: 0;
+  }
+}
+
+.boxImgSocialMedia a {
+  margin: 0;
+}
+
+.imgFace {
+  width: 4rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.SingleHachureBlancheHero {
+  width: 100%;
+  transform: rotate(180deg);
+  height: 5rem;
+}
